@@ -1,13 +1,13 @@
 {
-  "main.css": "/sensortag-react-app/static/css/main.f83f7e22.chunk.css",
-  "main.js": "/sensortag-react-app/static/js/main.2ff682c7.chunk.js",
-  "main.js.map": "/sensortag-react-app/static/js/main.2ff682c7.chunk.js.map",
-  "static/js/1.4a34e45d.chunk.js": "/sensortag-react-app/static/js/1.4a34e45d.chunk.js",
-  "static/js/1.4a34e45d.chunk.js.map": "/sensortag-react-app/static/js/1.4a34e45d.chunk.js.map",
+  "main.css": "/sensortag-react-app/static/css/main.7e7ec60f.chunk.css",
+  "main.js": "/sensortag-react-app/static/js/main.b019cd37.chunk.js",
+  "main.js.map": "/sensortag-react-app/static/js/main.b019cd37.chunk.js.map",
+  "static/js/1.26c7ae54.chunk.js": "/sensortag-react-app/static/js/1.26c7ae54.chunk.js",
+  "static/js/1.26c7ae54.chunk.js.map": "/sensortag-react-app/static/js/1.26c7ae54.chunk.js.map",
   "runtime~main.js": "/sensortag-react-app/static/js/runtime~main.c6d553cd.js",
   "runtime~main.js.map": "/sensortag-react-app/static/js/runtime~main.c6d553cd.js.map",
-  "static/css/main.f83f7e22.chunk.css.map": "/sensortag-react-app/static/css/main.f83f7e22.chunk.css.map",
+  "static/css/main.7e7ec60f.chunk.css.map": "/sensortag-react-app/static/css/main.7e7ec60f.chunk.css.map",
   "index.html": "/sensortag-react-app/index.html",
-  "precache-manifest.f5c375c1d35cb40cb806f5e91c93a0dc.js": "/sensortag-react-app/precache-manifest.f5c375c1d35cb40cb806f5e91c93a0dc.js",
+  "precache-manifest.db6a82de3844cfc928e6274671f23919.js": "/sensortag-react-app/precache-manifest.db6a82de3844cfc928e6274671f23919.js",
   "service-worker.js": "/sensortag-react-app/service-worker.js"
 }

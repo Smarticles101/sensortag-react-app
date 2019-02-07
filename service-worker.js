@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/sensortag-react-app/precache-manifest.f5c375c1d35cb40cb806f5e91c93a0dc.js"
+  "/sensortag-react-app/precache-manifest.db6a82de3844cfc928e6274671f23919.js"
 );
 
 workbox.clientsClaim();
