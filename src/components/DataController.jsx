@@ -1,17 +1,63 @@
 import React, { Component } from "react";
+import { Line as LineChart } from "react-chartjs-2";
 
 export default class DataController extends Component {
   state = {
-    barometer: {
-      temp: 0,
-      pressure: 0
+    temp: {
+      labels: [],
+      datasets: [
+        {
+          label: "Temp",
+          data: [],
+          backgroundColor: "rgba(75,192,192,0.4)"
+        }
+      ]
+    },
+    pressure: {
+      labels: [],
+      datasets: [
+        {
+          label: "Pressure",
+          data: [],
+          backgroundColor: "rgba(75,192,192,0.4)"
+        }
+      ]
     }
   };
   connect = () =>
     this.props.connect().then(() => {
-      this.props.subscribeToBarometerData(barometer =>
-        this.setState({ barometer })
-      );
+      this.props.subscribeToBarometerData(barometer => {
+        let date = new Date();
+        this.setState({
+          temp: {
+            labels: [
+              ...this.state.temp.labels,
+              `${date.getMinutes()}:${date.getSeconds()}`
+            ],
+            datasets: [
+              {
+                ...this.state.temp.datasets[0],
+                data: [...this.state.temp.datasets[0].data, barometer.temp]
+              }
+            ]
+          },
+          pressure: {
+            labels: [
+              ...this.state.pressure.labels,
+              `${date.getMinutes()}:${date.getSeconds()}`
+            ],
+            datasets: [
+              {
+                ...this.state.pressure.datasets[0],
+                data: [
+                  ...this.state.pressure.datasets[0].data,
+                  barometer.pressure
+                ]
+              }
+            ]
+          }
+        });
+      });
     });
 
   render() {
@@ -21,9 +67,8 @@ export default class DataController extends Component {
           <button onClick={this.connect}>Connect!</button>
         ) : (
           <div>
-            temp: {this.state.barometer.temp}
-            <br />
-            pressure: {this.state.barometer.pressure}
+            <LineChart data={this.state.temp} />
+            <LineChart data={this.state.pressure} />
           </div>
         )}
       </>
